@@ -1,0 +1,59 @@
+{
+    "id": "demo::load_database",
+    "title": "Load Database",
+    "type": "operator",
+    "inputs": {},
+    "outputs": {
+        "data": {
+            "label": "Data"
+        }
+    },
+    "parameters": [
+        {
+            "id": "database",
+            "label": "Banco de Dados:",
+            "type": "processflow::select",
+            "config": {
+                "options": [
+                    {"value": "MySQL", "label": "MySQL"},
+                    {"value": "PostgreSQL", "label": "PostgreSQL"},
+                    {"value": "Oracle", "label": "Oracle"},
+                    {"value": "SQLServer", "label": "SQLServer"}
+                ],
+                "default": "MySQL"
+            }
+        },
+        {
+            "id": "user",
+            "label": "Usuário:",
+            "type": "processflow::text",
+            "config": {
+                "default": ""
+            }
+        },
+        {
+            "id": "password",
+            "label": "Senha:",
+            "type": "processflow::text",
+            "config": {
+                "default": ""
+            }
+        },
+        {
+            "id": "host",
+            "label": "Servidor:",
+            "type": "processflow::text",
+            "config": {
+                "default": ""
+            }
+        },
+        {
+            "id": "port",
+            "label": "Porta:",
+            "type": "processflow::text",
+            "config": {
+                "default": ""
+            }
+        }
+    ]
+}
